@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TubeGate — choose which YouTube videos can play</title><meta name="description" content="A Chrome extension that lets families choose which YouTube videos can play.">
+<link rel="icon" href="icon.png"><style>
+:root{--bg:#f6f4ef;--card:#fffdf8;--ink:#1d2321;--muted:#5b6461;--line:#e3ded3;--accent:#1f6f5c;--soft:#e7f1ec}
+@media (prefers-color-scheme:dark){:root{--bg:#121615;--card:#1a201e;--ink:#e9eeec;--muted:#9aa6a1;--line:#2b3431;--accent:#5cc3a3;--soft:#173029}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;align-items:center;gap:12px;padding:18px 20px;max-width:860px;margin:0 auto}
+header a{color:var(--ink);text-decoration:none;font-weight:800;font-size:19px;display:flex;align-items:center;gap:10px}
+header nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}header nav a{font-weight:500;font-size:15px;color:var(--muted)}
+main{max-width:860px;margin:0 auto;padding:8px 20px 64px}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:24px 0 12px}h2{margin-top:36px;font-size:22px}
+p,li{color:var(--ink)}a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;display:block;overflow-x:auto}th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+code{background:var(--soft);padding:1px 5px;border-radius:5px;font-size:14px}
+.lede{font-size:19px;color:var(--muted);max-width:640px}
+.cta{display:inline-block;margin:18px 0;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;font-weight:650;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+footer{max-width:860px;margin:0 auto;padding:24px 20px 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+</style></head>
+<body><header><a href="index.html"><img src="icon.png" alt="" width="32" height="32">TubeGate</a>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="sponsors.html">Sponsors</a>
+<a href="https://github.com/ravipitlaai/tubegate-site/issues">Support</a></nav></header>
+<main><h1>Choose which YouTube videos can play.</h1>
+<p class="lede">TubeGate is a Chrome extension for families. Pick who is watching and what it's for, and TubeGate checks
+every video before it plays, protected by your own PIN.</p>
+<p class="lede"><b>Coming soon to the Chrome Web Store.</b></p>
+<div class="grid"><div class="card"><h3>Age profiles</h3><p>Little kids, Kids, Tweens, Teens and Adult, each with sensible defaults you can adjust.</p></div><div class="card"><h3>Purpose modes</h3><p>Learning, Motivation, Focus, Fitness, Calm, Creativity, Languages and more, which can switch on a schedule.</p></div><div class="card"><h3>Every way in</h3><p>Direct links, in-app navigation, Shorts and embedded videos are all checked before they play.</p></div><div class="card"><h3>Your rules</h3><p>All 15 YouTube categories, trusted and blocked channels, blocked words, Shorts, live and age-restricted videos.</p></div><div class="card"><h3>Time limits</h3><p>Daily watch time and allowed hours, with a friendly rest screen.</p></div><div class="card"><h3>Parent alerts</h3><p>Know when a video is blocked or someone asks for access, by phone push, email, Telegram, Discord, Slack or webhook.</p></div></div>
+<h2>Free, with one small sponsored suggestion</h2>
+<p>TubeGate shows one clearly labelled suggestion to the adult who manages it, chosen from the modes you pick and never
+from what anyone watches. Children never see ads, nothing about you is sent to advertisers, and you can switch ads off
+at any time. Read the <a href="privacy.html">privacy policy</a>.</p>
+<h2>Help</h2>
+<p>Questions or problems? <a href="https://github.com/ravipitlaai/tubegate-site/issues">Open an issue</a>.</p></main>
+<footer>TubeGate 1.3.0 · Not affiliated with or endorsed by YouTube or Google. YouTube is a trademark of Google LLC.</footer>
+</body></html>

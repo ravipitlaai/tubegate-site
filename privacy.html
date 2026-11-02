@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TubeGate privacy policy</title><meta name="description" content="What data the TubeGate Chrome extension uses and where it goes.">
+<link rel="icon" href="icon.png"><style>
+:root{--bg:#f6f4ef;--card:#fffdf8;--ink:#1d2321;--muted:#5b6461;--line:#e3ded3;--accent:#1f6f5c;--soft:#e7f1ec}
+@media (prefers-color-scheme:dark){:root{--bg:#121615;--card:#1a201e;--ink:#e9eeec;--muted:#9aa6a1;--line:#2b3431;--accent:#5cc3a3;--soft:#173029}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;align-items:center;gap:12px;padding:18px 20px;max-width:860px;margin:0 auto}
+header a{color:var(--ink);text-decoration:none;font-weight:800;font-size:19px;display:flex;align-items:center;gap:10px}
+header nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}header nav a{font-weight:500;font-size:15px;color:var(--muted)}
+main{max-width:860px;margin:0 auto;padding:8px 20px 64px}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-.02em;margin:24px 0 12px}h2{margin-top:36px;font-size:22px}
+p,li{color:var(--ink)}a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;display:block;overflow-x:auto}th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+code{background:var(--soft);padding:1px 5px;border-radius:5px;font-size:14px}
+.lede{font-size:19px;color:var(--muted);max-width:640px}
+.cta{display:inline-block;margin:18px 0;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;font-weight:650;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+footer{max-width:860px;margin:0 auto;padding:24px 20px 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+</style></head>
+<body><header><a href="index.html"><img src="icon.png" alt="" width="32" height="32">TubeGate</a>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="sponsors.html">Sponsors</a>
+<a href="https://github.com/ravipitlaai/tubegate-site/issues">Support</a></nav></header>
+<main><h1>TubeGate privacy policy</h1>
+<p><em>Last updated: 2 November 2026.</em></p>
+<p>TubeGate is a Chrome extension that lets a parent or other admin decide which kinds of YouTube videos can play on a
+computer. This policy explains what data it uses and where that data goes.</p>
+<h2>What stays on your computer</h2>
+<p>Everything TubeGate needs is stored in Chrome's extension storage on this computer:</p>
+<ul>
+<li>your settings (profile, modes, categories, channels, words, time limits, alert setup);</li>
+<li>the admin PIN, stored only as a salted hash;</li>
+<li>watch time per day and per category, and an activity log (videos allowed or blocked, access requests, admin
+  actions), kept for up to 31 days and 500 events;</li>
+<li>counts of how many times each sponsored suggestion was shown or clicked.</li>
+</ul>
+<p>TubeGate has no account system and no server of its own that receives this data.</p>
+<h2>When TubeGate contacts other websites</h2>
+<table>
+<thead>
+<tr>
+<th>Request</th>
+<th>Why</th>
+<th>What is sent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>youtube.com</td>
+<td>To read a video's category, channel and age rating so it can be allowed or blocked</td>
+<td>A normal YouTube page request from your browser</td>
+</tr>
+<tr>
+<td>Alert services you switch on (ntfy, Telegram, EmailJS, Discord, Slack or your own webhook)</td>
+<td>To tell the admin about events they chose</td>
+<td>The event, video title, channel, category and link, the device name, and the time, sent only to the service you set up</td>
+</tr>
+<tr>
+<td>ravipitlaai.github.io (TubeGate's public site)</td>
+<td>To download the current list of sponsored suggestions, about every 6 hours</td>
+<td>A plain download request with no cookies and no information about you; the host can see your IP address, as with any web request</td>
+</tr>
+<tr>
+<td>EthicalAds (only if the developer has configured it)</td>
+<td>To fetch one contextual ad</td>
+<td>The profile's purpose modes and allowed categories as keywords; no cookies or identifiers; their server can see your IP address and records a view for billing</td>
+</tr>
+</tbody>
+</table>
+<h2>Sponsored suggestions (ads)</h2>
+<ul>
+<li>TubeGate may show one small sponsored suggestion in its own admin console. On the Adult (18+) profile it may also
+  show one in its toolbar popup and on its own block screen, the page TubeGate displays over YouTube when it blocks a
+  video. There it is labelled "Shown by the TubeGate extension, not by YouTube". TubeGate never changes or replaces
+  YouTube's own ads or content, and never shows ads on any other website or in notifications.</li>
+<li>Children never see ads.</li>
+<li>Ads are chosen on your computer from the profile's purpose modes and allowed categories. They are never chosen from
+  what anyone watched, and TubeGate never sends viewing history, the activity log or any personal information to
+  advertisers.</li>
+<li>Some suggestions may be affiliate links. They are always labelled, and the developer may earn a commission if you
+  buy something after clicking.</li>
+<li>You can switch ads off at any time in the admin console under <strong>Ads</strong>. It is free to do so.</li>
+</ul>
+<h2>What TubeGate never does</h2>
+<ul>
+<li>It does not sell or transfer user data to third parties, advertising platforms, data brokers or other information
+  resellers.</li>
+<li>It does not use or transfer user data for purposes unrelated to TubeGate's single purpose.</li>
+<li>It does not use or transfer user data to decide creditworthiness or for lending.</li>
+<li>It does not use personal data for personalised advertising.</li>
+</ul>
+<h2>Limited Use</h2>
+<p>The use of information received from Google APIs will adhere to the
+<a href="https://developer.chrome.com/docs/webstore/program-policies/policies">Chrome Web Store User Data Policy</a>, including the
+Limited Use requirements.</p>
+<h2>Deleting your data</h2>
+<p>Remove TubeGate from Chrome (chrome://extensions → TubeGate → Remove) to delete everything it stored. You can also
+clear the activity log at any time in the admin console under <strong>Activity</strong>.</p>
+<h2>Contact</h2>
+<p>Questions about this policy or TubeGate: open an issue at
+<a href="https://github.com/ravipitlaai/tubegate-site/issues">github.com/ravipitlaai/tubegate-site/issues</a>.</p></main>
+<footer>TubeGate 1.3.0 · Not affiliated with or endorsed by YouTube or Google. YouTube is a trademark of Google LLC.</footer>
+</body></html>
