@@ -30,7 +30,8 @@ computer. This policy explains what data it uses and where that data goes.</p>
 <p>Everything TubeGate needs is stored in Chrome's extension storage on this computer:</p>
 <ul>
 <li>your settings (profile, modes, categories, channels, words, time limits, alert setup);</li>
-<li>the admin PIN, stored only as a salted hash;</li>
+<li>the admin PIN, stored only as a slow salted hash (PBKDF2);</li>
+<li>if email codes are switched on, the email address codes are sent to, and the current code as a salted hash only;</li>
 <li>watch time per day and per category, and an activity log (videos allowed or blocked, access requests, admin
   actions), kept for up to 31 days and 500 events;</li>
 <li>counts of how many times each sponsored suggestion was shown or clicked.</li>
@@ -55,6 +56,11 @@ computer. This policy explains what data it uses and where that data goes.</p>
 <td>Alert services you switch on (ntfy, Telegram, EmailJS, Discord, Slack or your own webhook)</td>
 <td>To tell the admin about events they chose</td>
 <td>The event, video title, channel, category and link, the device name, and the time, sent only to the service you set up</td>
+</tr>
+<tr>
+<td>ntfy.sh email relay, or EmailJS if the parent set it up (only when email codes are switched on and someone asks for a code)</td>
+<td>To email a one-time unlock code to the parent</td>
+<td>The parent's email address, the code, the device name and what the code is for. ntfy.sh adds the sender's IP address to the email to prevent abuse. Nothing is sent unless a code is requested</td>
 </tr>
 <tr>
 <td>ravipitlaai.github.io (TubeGate's public site)</td>
@@ -100,5 +106,5 @@ clear the activity log at any time in the admin console under <strong>Activity</
 <h2>Contact</h2>
 <p>Questions about this policy or TubeGate: open an issue at
 <a href="https://github.com/ravipitlaai/tubegate-site/issues">github.com/ravipitlaai/tubegate-site/issues</a>.</p></main>
-<footer>TubeGate 1.3.0 · Not affiliated with or endorsed by YouTube or Google. YouTube is a trademark of Google LLC.</footer>
+<footer>TubeGate 1.4.0 · Not affiliated with or endorsed by YouTube or Google. YouTube is a trademark of Google LLC.</footer>
 </body></html>
