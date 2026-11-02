@@ -1,4 +1,5 @@
 {
-  "version": 1,
-  "ads": []
+  "format": "tubegate-signed-feed/1",
+  "payload": "{\"version\":1,\"issued\":\"2026-11-02T19:12:56.162Z\",\"ads\":[]}",
+  "signature": "DZmEGbgwdDGmOGNAVQHFg/hV7aU3X9DBaIbDNrcG5qn5Zpi5jMVaB8fzpw8uwU1LsVaN840h7ERM0lA7M45BKg=="
 }
